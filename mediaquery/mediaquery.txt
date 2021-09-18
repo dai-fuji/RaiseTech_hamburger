@@ -1,0 +1,10 @@
+// font-sizeはremを使うといい。remはhtmlに指定された〇〇pxに対する比率
+// max-widthは〇〇px以下のとき　PCファースト
+// min-widthは✗✗px以上のとき　モバイルファースト
+@mixin breakpoint($point) {
+    @if $point==tablet {/Users/apple/template/mediaquery/mediaquery.txt
+        @media(max-width: 600px) {
+            @content;
+        }
+
+    }
